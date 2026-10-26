@@ -1,0 +1,24 @@
+{
+  "name": "traco2-backend",
+  "version": "1.0.0",
+  "description": "traCO2 Carbon Footprint Tracker - Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --experimental-sqlite src/server.js",
+    "dev": "nodemon --exec \"node --experimental-sqlite\" src/server.js",
+    "seed": "node --experimental-sqlite src/db/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
